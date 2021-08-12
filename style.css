@@ -2,6 +2,9 @@
   /* Color */
   --color-balck: black;
   --light-white: white;
+  --color-blue: #308fc7;
+  --corlor-dark-gray: #545e63;
+  --color-light-gray: #676b6e;
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -137,4 +140,69 @@ hr {
 
 #contact {
   display: none;
+}
+
+.content {
+  padding-top: 50px;
+  padding: 50ox;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__majors {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.major__icon {
+  margin: auto;
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__title,
+.major__description {
+  color: var(--corlor-dark-gray);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.job__description {
+  margin: 2px;
+  text-align: left;
+}
+
+.job img {
+  width: 200px;
+  height: 50px;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-gray);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-size: var(--font-micro);
 }
