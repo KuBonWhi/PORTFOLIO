@@ -34,23 +34,34 @@
       <h2 class="home__description">
         대체 불가능한 프론트엔드 개발자를 목표로!
       </h2>
-      <button class="home__contact">Contact Me</button>
     </section>
     <!-- Nav -->
     <nav id="navbar">
       <div>
         <ul class="navbar__menu">
           <li class="active">
-            <a href="#about" class="btn">About Me</a>
+            <a href="#about" class="btn" id="btn">About Me</a>
+            <a href="#about" class="btn" id="btn-icon">
+              <i class="fas fa-address-card"></i>
+            </a>
           </li>
           <li>
-            <a href="#skill" class="btn">Skills</a>
+            <a href="#skill" class="btn" id="btn">Skills</a>
+            <a href="#skill" class="btn" id="btn-icon">
+              <i class="fas fa-book"></i>
+            </a>
           </li>
           <li>
-            <a href="#project" class="btn">Projects</a>
+            <a href="#project" class="btn" id="btn">Projects</a>
+            <a href="#project" class="btn" id="btn-icon">
+              <i class="fas fa-project-diagram"></i>
+            </a>
           </li>
           <li>
-            <a href="#contact" class="btn">Contact</a>
+            <a href="#contact" class="btn" id="btn">Contact</a>
+            <a href="#contact" class="btn" id="btn-icon">
+              <i class="fas fa-phone"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -205,9 +216,62 @@
         </div>
       </section>
       <!-- Work -->
-      <section id="project" class="content">project</section>
+      <section id="project" class="content">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn active" data-filter="*">All<span class="categori__count">3</span></button>
+          <button class="category__btn" data-filter="front-end">Front-end<span class="categori__count">3</span></button>
+          <button class="category__btn" data-filter="back-end">Back-end<span class="categori__count">0</span></button>
+        </div>
+
+        <div class="work__projects">
+          <a href="https://github.com/KuBonWhi/CarrotAuction-frontend.git" class="project" target="blank" data-type="front-end">
+            <img src="imgs/projects/carrot-auction.png" alt="carrot-auction" class="project__img">
+            <div class="project__description">
+              <h3>중고 물품 경매 사이트</h3>
+              <span>중고 사이트에 경매 시스템 시스템 적용 with TypeScript and React</span>
+            </div>
+          </a>
+
+        
+          <a href="https://github.com/KuBonWhi/React/tree/main/TodoList" class="project" target="blank" data-type="front-end">
+            <img src="imgs/projects/todolist.png" alt="carrot-auction" class="project__img">
+            <div class="project__description">
+              <h3>TodoList</h3>
+              <span>리액트 연습을 위한 할일 목록 리스트 with TypeScript and React</span>
+            </div>
+          </a>
+        
+
+          <a href="https://github.com/KuBonWhi/HTML-CSS-Javascript/tree/main/Responsive%20Header" class="project" target="blank" data-type="front-end">
+            <img src="imgs/projects/responsive-header.png" alt="carrot-auction" class="project__img">
+            <div class="project__description">
+              <h3>반응형 헤더</h3>
+              <span>바닐라 JS를 이용한 반응형 헤더 연습 with HTML, CSS, JavaScript</span>
+            </div>
+          </a>
+        </div>
+      </section>
       <!-- Contact -->
-      <section id="contact" class="content">contact</section>
+      <section id="contact" class="content">
+        <h1 class="contact__tilte">Let's talk</h1>
+        <div class="contact__email-div">
+          <h2 class="contact__email">이메일 :</h2>
+        <h2 class="contact__email">gubonhy@naver.com</h2>
+      </div>
+      <div class="contact__git">
+        <h2 class="git">깃허브 :</h2>
+        <a href="https://github.com/KuBonWhi" target="_black" class="git">
+          https://github.com/KuBonWhi
+        </a>
+      </div>
+        <div class="contact__link">
+          <a href="https://github.com/KuBonWhi" target="_black">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
     </div>
   </body>
 </html>
